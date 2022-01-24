@@ -8,18 +8,29 @@
     box-sizing: border-box;
 }
 
+/* Variavéis de cor */
+
+:root{
+
+    --cor1: #4b105e;
+    --cor2: #802297;
+
+}
+
 header{
     /*propriedades do display*/
 
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    position: fixed;
+    margin-bottom: 70px;
 
     /*propriedades de tamanho*/
 
     width: 100%;
-    height: 90px;
+    height: 70px;
 
     /*cores do header*/
 
@@ -27,7 +38,7 @@ header{
 
     /*sombra do header*/
 
-    box-shadow: 0px 5px 5px #aaaaaa38;
+    box-shadow: 0px 5px 5px #aaaaaa35;
 }
 
 
@@ -44,7 +55,6 @@ header{
     font-family: 'Righteous', cursive;
     font-size: 2.8em;
     cursor: pointer;
-    user-select: none;
 }
 
 li{
@@ -66,15 +76,157 @@ li{
 .item-nav:after{
     content: "";
     position: absolute;
-    background-color: purple;
+    background-color: var(--cor1);
     height: 4px;
     left: 0;
     width: 0;
-    bottom: -15px;
+    bottom: -5px;
     transition: 0.5s ease-in;
 }
 
 
 .item-nav:hover:after{
     width: 100%;
+}
+
+
+
+main{
+    height: 200vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Seção do footer da página */
+
+footer{
+    background-color: var(--cor1);
+    height: 320px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Footer do meio */
+
+.mid-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 80%;
+}
+
+.mid-footer1{
+    width: 300px;
+}
+
+.mid-logo-footer{
+    font-family: 'Righteous', cursive;
+    font-size: 48px;
+    color: #FFFFFF;
+
+    padding: 40px 0px 20px 0px;
+
+    cursor: pointer;
+}
+
+.p-footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+
+
+/* Espaçamento na parte inferior */
+
+    padding-bottom: 20px;
+}
+
+.fa-phone-alt,
+.fa-envelope,
+.fa-clock{
+    color: white;
+    padding-right: 10px;
+}
+
+
+
+.mid-footer2{
+    width: 300px;
+}
+
+.mid2-redes{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+
+    padding: 40px 0px 20px 0px;
+}
+
+.mid2-redes-container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.fa-instagram,
+.fa-facebook,
+.fa-twitter{
+    font-size: 48px;
+    color: white;
+    padding: 0px 20px 0px 0px;
+}
+
+.fa-instagram:hover{
+     color: var(--cor2);
+     transition: 0.8s ease;
+}
+
+.fa-facebook:hover{
+    color: var(--cor2);
+    transition: 0.8s ease;
+}
+
+.fa-twitter:hover{
+    color: var(--cor2);
+    transition: 0.8s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Parte de baixo do footer */
+
+.b-footer{
+    width: 100%;
+    height: 20% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-b-footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
 }
