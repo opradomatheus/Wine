@@ -4,7 +4,8 @@
 @import url('https://fonts.google.com/specimen/Dongle?preview.text=HOME&preview.text_type=custom');
 
 
-*{
+*
+{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,7 +13,8 @@
 
 
 
-:root{
+:root
+{
 
     /* Variavéis de cor */
 
@@ -28,10 +30,14 @@
 
 
 
-body{min-height: 100vh;}
+html, body
+{
+    min-height: 10vh;
+}
 
 
-header{
+header
+{
     /*propriedades do display*/
 
     display: flex;
@@ -57,13 +63,14 @@ header{
 
 
 
-.container-logo{
+.container-logo
+{
     display: flex;
     align-items: center;
 }
 
-.logo{
-
+.logo
+{
     /*propriedades das fontes*/
     
     font-family: 'Righteous', cursive;
@@ -74,11 +81,13 @@ header{
     color: black;
 }
 
-li{
+li
+{
     display: inline-block;
 }
 
-.item-nav{
+.item-nav
+{
     font-family: 'Dongle', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
@@ -90,29 +99,68 @@ li{
 }
 
 
-.item-nav:after{
+.item-nav:after
+{
     content: "";
     position: absolute;
     background-color: var(--cor1);
     height: 4px;
     left: 0;
     width: 0;
-    bottom: -5px;
+    bottom: -8px;
     transition: 0.5s ease-in;
 }
 
 
-.item-nav:hover:after{
+.item-nav:hover:after
+{
     width: 100%;
 }
 
+
+section.apresentacao
+{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.apresentacao-txt
+{
+    position: absolute;
+    top: 40px;
+
+    align-self: center;
+
+    width: 900px;
+    background-color: pink;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.apresentacao-txt > p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+
+.apresentacao-txt > p > span
+{
+    font-family: var(--fonte1);
+    font-size: 20px;
+    user-select: none;
+}
 
 
 
 
 /* Seção do footer da página */
 
-footer{
+footer
+{
     background-color: var(--cor1);
     height: 320px;
     width: 100%;
@@ -123,7 +171,8 @@ footer{
 
 /* Footer do meio */
 
-.top-footer{
+.top-footer
+{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -131,11 +180,13 @@ footer{
     height: 80%;
 }
 
-.top-footer1{
+.top-footer1
+{
     width: 300px;
 }
 
-.top-logo-footer{
+.top-logo-footer
+{
     font-family: 'Righteous', cursive;
     font-size: 48px;
     color: #FFFFFF;
@@ -145,7 +196,8 @@ footer{
     cursor: pointer;
 }
 
-.p-footer{
+.p-footer
+{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -160,18 +212,21 @@ footer{
 
 .fa-phone-alt,
 .fa-envelope,
-.fa-clock{
+.fa-clock
+{
     color: white;
     padding-right: 10px;
 }
 
 
 
-.top-footer2{
+.top-footer2
+{
     width: 300px;
 }
 
-.top2-redes{
+.top2-redes
+{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     color: #FFFFFF;
@@ -179,7 +234,8 @@ footer{
     padding: 40px 0px 20px 0px;
 }
 
-.top2-redes-container{
+.top2-redes-container
+{
     display: flex;
     flex-direction: row;
     padding-top: 10px;
@@ -187,23 +243,27 @@ footer{
 
 .fa-instagram,
 .fa-facebook,
-.fa-twitter{
+.fa-twitter
+{
     font-size: 48px;
     color: white;
     padding: 0px 20px 0px 0px;
 }
 
-.fa-instagram:hover{
+.fa-instagram:hover
+{
      color: var(--cor2);
      transition: 0.3s ease;
 }
 
-.fa-facebook:hover{
+.fa-facebook:hover
+{
     color: var(--cor2);
     transition: 0.3s ease;
 }
 
-.fa-twitter:hover{
+.fa-twitter:hover
+{
     color: var(--cor2);
     transition: 0.3s ease;
 }
@@ -216,7 +276,8 @@ footer{
 
 
 
-hr{
+hr
+{
     align-self: center;
     width: 70%;
     border-color: #f1f1f115;
@@ -226,7 +287,8 @@ hr{
 
 /* Parte de baixo do footer */
 
-.b-footer{
+.b-footer
+{
     width: 100%;
     height: 20% ;
     display: flex;
@@ -234,7 +296,8 @@ hr{
     align-items: center;
 }
 
-.p-b-footer{
+.p-b-footer
+{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: white;
