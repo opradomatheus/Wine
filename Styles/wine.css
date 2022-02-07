@@ -245,6 +245,14 @@ section.apresentacao
     transform: rotate(-45deg);
 }
 
+.seta1,
+.seta2,
+.seta3,
+.seta4:hover
+{
+    cursor: pointer;
+}
+
 
 
 
