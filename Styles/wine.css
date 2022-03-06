@@ -91,6 +91,7 @@ li
 {
     font-family: 'Dongle', sans-serif;
     font-weight: 500;
+    font-size: 0.8rem;
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
@@ -119,143 +120,11 @@ li
 }
 
 
-section.apresentacao
+section.grid-section
 {
-    position: relative;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
+
 }
-
-.apresentacao-txt
-{
-    position: absolute;
-    top: 40px;
-
-    align-self: center;
-
-    width: 1100px;
-    background-color: pink;
-    text-align: center;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-
-
-.apresentacao-txt > p
-{
-    font-family: Arial, Helvetica, sans-serif;
-    user-select: none;
-}
-
-
-.apresentacao-txt > p > span
-{
-    font-family: var(--fonte1);
-    font-size: 20px;
-    user-select: none;
-}
-
-.slider
-{
-    position: relative;
-
-    top: 80px;
-
-    align-self: center;
-
-    background-position: center center;
-
-    height: 450px;
-    width: 1100px;
-
-    border-radius: 5px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.seta-rigth
-{
-    width: 300px;
-}
-
-.seta-left{
-    width: 300px;
-}
-
-
-.seta1
-{   
-
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    height: 5px;
-    width: 25px;
-
-    top: 50%;
-    left: 10px;
-
-    transform: rotate(-45deg);
-}
-
-.seta2
-{   
-
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    height: 5px;
-    width: 25px;
-
-    top: calc(50% + 14px);
-    left: 10px;
-
-    transform: rotate(45deg);
-}
-
-
-.seta3
-{   
-
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    height: 5px;
-    width: 25px;
-
-    top: 50%;
-    left: 1060px;
-
-    transform: rotate(45deg);
-    
-}
-
-.seta4
-{   
-
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    height: 5px;
-    width: 25px;
-
-    top: calc(50% + 14px);
-    left: 1060px;
-
-    transform: rotate(-45deg);
-}
-
-.seta1,
-.seta2,
-.seta3,
-.seta4:hover
-{
-    cursor: pointer;
-}
-
-
-
-
 
 
 /* Seção do footer da página */
